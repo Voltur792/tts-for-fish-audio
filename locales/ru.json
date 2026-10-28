@@ -1,0 +1,15 @@
+{
+  "listing.name": "TTS для Fish Audio",
+  "listing.description": "Озвучание ответов ассистента через Fish Audio: s2.1-pro и другие модели, публичные и свои голоса.",
+  "voice.default": "Голос модели Fish Audio",
+  "config.api_key.title": "API-ключ Fish Audio",
+  "config.api_key.description": "Ключ с https://fish.audio/app/api-keys/. Нужен и для синтеза, и для списка голосов.",
+  "config.model.title": "TTS-модель",
+  "config.model.description": "s2.1-pro — рабочая модель, s2.1-pro-free — она же бесплатно для тестов. s1 устарела и 31.12.2026 будет обслуживаться s2.1-pro.",
+  "config.latency.title": "Отклик",
+  "config.latency.description": "normal — качество, balanced — задержка ниже, low — максимально быстро.",
+  "config.mp3_bitrate.title": "Битрейт аудио",
+  "config.mp3_bitrate.description": "128 kbps по умолчанию. 64 kbps — меньше вес ответа: помогает, если канал обрывает большое аудио (VPN, антивирус, прокси, разбирающий HTTPS).",
+  "config.language.title": "Язык чтения цифр и дат",
+  "config.language.description": "Например ru или en. Влияет только на произношение чисел, дат и единиц; голос не меняется. Пусто — автоопределение."
+}

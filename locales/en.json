@@ -1,0 +1,15 @@
+{
+  "listing.name": "TTS for Fish Audio",
+  "listing.description": "Speech for the assistant from Fish Audio: s2.1-pro and other models, public and your own voices.",
+  "voice.default": "Fish Audio model voice",
+  "config.api_key.title": "Fish Audio API key",
+  "config.api_key.description": "A key from https://fish.audio/app/api-keys/. Used for both synthesis and the voice list.",
+  "config.model.title": "TTS model",
+  "config.model.description": "s2.1-pro is the production model, s2.1-pro-free is the same model at no cost for testing. s1 is deprecated and will be served by s2.1-pro on 2026-12-31.",
+  "config.latency.title": "Response time",
+  "config.latency.description": "normal — best quality, balanced — lower latency, low — as fast as possible.",
+  "config.mp3_bitrate.title": "Audio bitrate",
+  "config.mp3_bitrate.description": "128 kbps by default. 64 kbps makes the reply smaller — helps when the connection drops large audio (VPN, anti-virus, a TLS-intercepting proxy).",
+  "config.language.title": "Language for reading numbers and dates",
+  "config.language.description": "For example ru or en. Only changes how numbers, dates and units are spelled out; it does not change the voice. Leave empty to detect it automatically."
+}

@@ -1,0 +1,24 @@
+[plugin]
+id = "tts-for-fish-audio"
+name = "TTS for Fish Audio"
+version = "0.2.0"
+description = "Speech for the assistant from Fish Audio: s2.1-pro and other models, public and your own voices."
+author = "Voltur"
+license = "MIT"
+call_timeout_secs = 90
+
+[entry]
+command = "python"
+args = ["-m", "src.plugin"]
+cwd = "."
+runtimes = ["python"]
+
+[capabilities]
+tts = true
+
+[config]
+schema = "{ \"type\": \"object\", \"properties\": { \"api_key\": { \"type\": \"string\", \"title\": \"API-ключ Fish Audio\", \"description\": \"Ключ с https://fish.audio/app/api-keys/. Нужен и для синтеза, и для списка голосов.\", \"default\": \"\" }, \"model\": { \"type\": \"string\", \"title\": \"TTS-модель\", \"description\": \"s2.1-pro — рабочая модель, s2.1-pro-free — она же бесплатно для тестов и небольших объёмов, s1 устарела и 31.12.2026 будет обслуживаться s2.1-pro.\", \"default\": \"s2.1-pro-free\", \"enum\": [\"s2.1-pro\", \"s2.1-pro-free\", \"s2-pro\", \"s1\", \"drama-3\"] }, \"latency\": { \"type\": \"string\", \"title\": \"Отклик\", \"description\": \"normal — качество, balanced — задержка ниже, low — максимально быстро.\", \"default\": \"normal\", \"enum\": [\"normal\", \"balanced\", \"low\"] }, \"mp3_bitrate\": { \"type\": \"string\", \"title\": \"Битрейт аудио\", \"description\": \"128 kbps по умолчанию. 64 kbps — меньше вес ответа: помогает, если канал обрывает большое аудио (VPN, антивирус, прокси, разбирающий HTTPS).\", \"default\": \"128\", \"enum\": [\"64\", \"128\", \"192\"] }, \"language\": { \"type\": \"string\", \"title\": \"Язык чтения цифр и дат\", \"description\": \"Например ru или en. Влияет только на то, как произносятся числа, даты и единицы измерения; голос от него не меняется. Пусто — определять автоматически.\", \"default\": \"\" } } }"
+
+[platform]
+os = []
+arch = []
