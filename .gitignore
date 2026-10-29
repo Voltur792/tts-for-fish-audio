@@ -1,9 +1,0 @@
-# Build artifacts
-*.astraplugin
-
-__pycache__/
-*.pyc
-.venv/
-.pytest_cache/
-requirements.lock
-.astra-venv.json
